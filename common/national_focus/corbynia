@@ -1,1 +1,44 @@
-a
+focus_tree = {
+	id = corbyn_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+		add = 10
+		tag = ENG
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 1000 }
+
+
+	focus = {
+		id = ENG_secure_the_state
+		icon = GFX_goal_ENG_secure_the_state
+		x = 26
+		y = 0
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		cost = 10
+		#prerequisite = { focus = AST_workers_paradise }
+		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+        add_stability = 0.05
+        }		   
+		ai_will_do = {
+		}
+	}
+}		
